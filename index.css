@@ -1,0 +1,28 @@
+body {
+    background-color: hsl(0, 0%, 96%);
+}
+
+.hidden {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+tr:nth-child(1) {
+    background-color: #485fc7;
+    color: hsl(0, 0%, 96%);
+}
+
+.tr:nth-child(even) {
+    background-color:#485fc74a
+}
+
+.light {
+    background-color: hsl(0%, 0%, 50%);
+}
+
+.italic {
+    font-style: italic;
+}

@@ -1,0 +1,54 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy">
+    <title>Hello Electron⚡</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+
+    <!-- menu -->
+    <div id="menu-container"></div>
+
+    <!-- head -->
+    <section class="hero is-small is-primary">
+        <span class="icon">
+            <i class="fas fa-info-circle"></i>
+        </span>
+        <div class="hero-body">
+            <p class="title">Hello Electron<span class="has-text-warning">⚡</span>!</p>
+            <button id="select-file" class="button is-white">Select File</button><br/><br/>
+        </div>
+    </section>
+
+    <!-- body -->
+    <section id="large-section" class="hidden section">
+        <div class="box is-primary">
+
+            <p id="selected-file-text" class="hidden subtitle is-5">
+                <span class="has-text-warning">📂</span>
+                <span id="selected-file-name"></span>
+            </p>
+        </div>
+        <div class="table-container">
+            <table id="excel-table" class="table is-bordered is-striped is-narrow is-fullwidth">
+                <!-- table content rendered in renderer.js -->
+            </table>
+        </div>
+    </section>
+
+
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="./components/menu/menuLoader.js"></script>
+</body>
+
+</html>
