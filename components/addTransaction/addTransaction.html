@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>⚡iCountant</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+
+    <form id="add-transaction-form">
+        <label for="business-name-input">🏢Company:</label>
+        <input type="text" id="business-name-input" name="business_name" required>
+            
+        <label for="amount-input">💵Amount:</label>
+        <input type="text" id="amount-input" name="value" required>
+        
+        <label for="category-select">🗄️Category:</label>
+        <select id="category-select" name="category" required>
+            <option value="">Select a category</option>
+            <option value="Groceries">Groceries</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Rent">Rent</option>
+            <option value="Other">Other</option>
+        </select>
+        
+        <button type="submit">Add Transaction</button>
+            
+    </form>
+    <button id="back-btn">Back</button>
+    <script src="./addTransaction.js"></script>
+</body>
+
+</html>

@@ -19,6 +19,7 @@ function loadMenu() {
 function addMenuEventListeners() {
     const menuHome = document.getElementById('menu-home');
     const menuAbout = document.getElementById('menu-about');
+    const menuICountant = document.getElementById('menu-icountant');
   
     if (menuHome && !(window.location.pathname.includes('/index.html'))) {
       menuHome.addEventListener('click', () => {
@@ -31,7 +32,12 @@ function addMenuEventListeners() {
       menuAbout.addEventListener('click', () => {
         window.location.href = prefix + 'about.html';
       });
+    } if (menuICountant) {
+      menuICountant.addEventListener('click', () => {
+        window.location.href = prefix + 'icountant.html';
+      });
     }
+  
   }
   
   loadMenu();

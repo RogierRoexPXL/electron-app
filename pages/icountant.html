@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>⚡iCountant</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <div id="menu-container"></div>
+    <section class="section is-light">
+        <div class="container">
+            <h1 class="title">Transactions🌐</h1>
+            <table id="transactions-table" class="table is-bordered is-striped is-narrow is-fullwidth">
+                <thead>
+                    <tr>
+                        <th>💵Amount</th>
+                        <th>🏢Company</th>
+                        <th>🗄️Category</th>
+                        <th>🚮</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="container">
+            <button id="add-transaction-btn" class="button is-primary is-outlined">Add Transaction</button>
+        </div>
+    </section>
+    <script src="../renderer.js"></script>
+    <script src="../components/menu/menuLoader.js"></script>
+    <script src="./icountant.js"></script>
+</body>
+</html>
