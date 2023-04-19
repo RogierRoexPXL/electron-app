@@ -7,5 +7,4 @@
 npm i
 npm start
 ```
-<!-- 
-![GIF](./assets/electron.gif "First look at app v1.0") -->
+![GIF](./assets/electron.gif "First look at app v1.0")
